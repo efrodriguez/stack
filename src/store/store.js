@@ -2,7 +2,7 @@ const store = {
   items: [
     {
       id: 1,
-      text: "clean the room.",
+      text: "Item 1",
       editing: false,
     },
   ],
