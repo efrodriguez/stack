@@ -22,7 +22,7 @@ const Stack = (state) => {
         const addItemAddEventListener = () =>
           document.querySelector("div#stack #itemAdd").addEventListener("click", handleItemAdd);
 
-          const addItemRemoveEventListener = () =>
+        const addItemRemoveEventListener = () =>
           document.querySelector("div#stack #itemRemove").addEventListener("click", handleItemRemove);
     
         return { addItemAddEventListener, addItemRemoveEventListener };

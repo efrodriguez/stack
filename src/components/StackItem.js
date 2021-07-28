@@ -15,10 +15,8 @@ const StackItem = (state) => {
 
     const handleItemSave = (event)  => {
         const li = event.target.parentElement;
-        console.log(li.id);
 
         const newText = li.querySelector("input").value;
-        console.log(newText);
     
         const itemIndex = state.items.findIndex((item) => item.id === Number.parseInt(li.id));
         const updatedItems = Object.assign([...state.items], {
@@ -46,14 +44,14 @@ const StackItem = (state) => {
         return `
         <li id="${state.id}" class="item">
             ${state.editing === false ?
-            `
-                <div>${state.text}</div>
-                <button id="itemEdit">Edit</button>
-            ` : 
-            `
-                <input type="text" id="formEdit" value="${state.text}">
-                <button id="itemSave">Save</button>
-            `
+                `
+                    <div>${state.text}</div>
+                    <button id="itemEdit">Edit</button>
+                ` : 
+                `
+                    <input type="text" id="formEdit" value="${state.text}">
+                    <button id="itemSave">Save</button>
+                `
             }
         </li>
         `
