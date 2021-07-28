@@ -1,4 +1,5 @@
 import { updateStore } from "../store/updateStore";
+import { StackItem } from "./StackItem";
 
 const Stack = (state) => {
     
@@ -30,14 +31,14 @@ const Stack = (state) => {
     const render = () => {
         return `
             <div id="stack">
+                <button id="itemAdd">Add Item</button>
+                <button id="itemRemove">Remove Item</button>
                 <ul>
                     ${state.items
-                    .map((item) => JSON.stringify(item))
+                    .map((item) => StackItem(item).render())
                     .toString()
                     .replaceAll(",", "")}
                 </ul>
-                <button id="itemAdd">Add Item</button>
-                <button id="itemRemove">Remove Item</button>
             </div>
         `
     }

@@ -1,13 +1,18 @@
-li {
+ul {
+  display: flex;
+  flex-direction: column-reverse;  
+}
+
+ul .item {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     margin: 10px 0px;
 }
 
-li > p {
+ul li > p {
     width: 250px;
 }
 
-li > button {
-    margin: 0px 5px;
+ul .item > button {
+    margin-left: 10px;
 }
