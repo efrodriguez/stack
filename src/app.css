@@ -1,18 +1,53 @@
-ul {
-  display: flex;
-  flex-direction: column-reverse;  
-}
-
-ul .item {
+#app {
     display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 30px auto;
+    width: 30%;
+    border: 3px solid #ad2121;
+    padding-bottom: 25px;
+    height: 500px;
+}
+
+
+#app #stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 3px solid #2152ad;
+    padding: 10px;
+    width: 80%;
+    height: 450px;
+}
+
+#app #stack #controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+#app #stack #controls > button {
+    margin-right: 10px;
+}
+
+#app #stack ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse; 
+  justify-content: center;
+  padding: 0;  
+}
+
+#app #stack ul .item {
+    display: flex;
+    border: 3px solid #21ad28; 
     flex-direction: row; 
+    justify-content: center;
     margin: 10px 0px;
+    width: 60%;
+    padding: 5px;
 }
 
-ul li > p {
-    width: 250px;
-}
-
-ul .item > button {
+#app #stack ul .item > button {
     margin-left: 10px;
 }

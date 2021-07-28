@@ -31,14 +31,15 @@ const Stack = (state) => {
     const render = () => {
         return `
             <div id="stack">
-                <button id="itemAdd">Add Item</button>
-                <button id="itemRemove">Remove Item</button>
                 <ul>
-                    ${state.items
-                    .map((item) => StackItem(item).render())
-                    .toString()
-                    .replaceAll(",", "")}
+                    ${state.items.map((item) => StackItem(item).render())
+                        .toString()
+                        .replaceAll(",", "")}
                 </ul>
+                <div id="controls">
+                    <button id="itemAdd">Add Item</button>
+                    <button id="itemRemove">Remove Item</button>
+                </div>
             </div>
         `
     }

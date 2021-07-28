@@ -4,7 +4,7 @@ import { Stack } from "./components/Stack";
 const App = (state) => {
   const render = () => {
     return `
-      <div class="app">
+      <div id="app">
          ${Stack(state).render()}
       </div>
    `;
