@@ -1,6 +1,4 @@
-# Stack - Reducing complexity using React patterns in vanilla JS
-
-A To-do's list app implemented in JavaScript using functional and React concepts.
+# Stack - Reducing complexity using React patterns in Vanilla JS
 
 # Setup
 
